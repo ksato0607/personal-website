@@ -4,6 +4,11 @@ import './App.css';
 import profileImage from '../src/assets/my-profile-image.jpg';
 import { FaGithub, FaYoutube, FaLinkedin } from 'react-icons/fa';
 
+interface IIconProps {
+  url: string;
+  reactIcon: object;
+}
+
 function App() {
   return (
     <div className="App">
@@ -17,31 +22,9 @@ function App() {
           been building a platform that connects creators together and takes their creativity into the next level.
         </span>
         <div id="icons" style={{ fontSize: '52px', paddingTop: '10px' }}>
-          {/* <Icon url="https://github.com/ksato0607" icon={<FaGithub />} /> */}
-          <a
-            href="https://github.com/ksato0607"
-            target="_blank"
-            rel="noreferrer"
-            style={{ paddingRight: '20px', color: '#ec7309' }}
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCzosx8yNdW6qPyUoKp-VtAg/videos"
-            target="_blank"
-            rel="noreferrer"
-            style={{ padding: '20px', color: '#ec7309' }}
-          >
-            <FaYoutube />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/keisuke-sato/"
-            target="_blank"
-            rel="noreferrer"
-            style={{ padding: '20px', color: '#ec7309' }}
-          >
-            <FaLinkedin />
-          </a>
+          <Icon url="https://github.com/ksato0607" reactIcon={<FaGithub />} />
+          <Icon url="https://www.youtube.com/channel/UCzosx8yNdW6qPyUoKp-VtAg/videos" reactIcon={<FaYoutube />} />
+          <Icon url="https://www.linkedin.com/in/keisuke-sato/" reactIcon={<FaLinkedin />} />
         </div>
 
         <h1>Highlight</h1>
@@ -52,12 +35,12 @@ function App() {
   );
 }
 
-// function Icon({ url }: any) {
-//   return (
-//     <a href={url} target="_blank" rel="noreferrer" style={{ paddingRight: '20px', color: '#ec7309' }}>
-//       <FaGithub />
-//     </a>
-//   );
-// }
+function Icon({ url, reactIcon }: IIconProps) {
+  return (
+    <a href={url} target="_blank" rel="noreferrer" style={{ paddingRight: '20px', color: '#ec7309' }}>
+      {reactIcon}
+    </a>
+  );
+}
 
 export default App;
