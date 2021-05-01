@@ -13,10 +13,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Profile webite - coming soon</h2>
+        <h2 className="is-size-4">Profile webite - coming soon</h2>
         <img id="profile-image" src={profileImage} alt="profile" />
-        <span style={{ fontSize: '36px' }}>Keisuke Sato</span>
-        <span style={{ fontSize: '24px', width: '40%' }}>
+        <span className="is-size-2">Keisuke Sato</span>
+        <span className="is-size-3 container is-max-desktop" style={{ margin: '10px' }}>
           I'm a software engineer who has been interested in interactive projects which bring people, design and
           technology together. I worked on an interactive projection mapping for Zushi Art Festival in 2020 and I have
           been building a platform that connects creators together and takes their creativity into the next level.
@@ -27,8 +27,13 @@ function App() {
           <Icon url="https://www.linkedin.com/in/keisuke-sato/" reactIcon={<FaLinkedin />} />
         </div>
 
-        <h1>Highlight</h1>
-        <ReactPlayer url="https://www.youtube.com/watch?v=CFBeNRFlvdM" />
+        <h1 className="is-size-2">Highlight</h1>
+        <ReactPlayer
+          url="https://www.youtube.com/watch?v=CFBeNRFlvdM"
+          width="800px"
+          height="450px"
+          style={{ height: 'auto', maxWidth: '100%' }}
+        />
         <br />
       </header>
     </div>
