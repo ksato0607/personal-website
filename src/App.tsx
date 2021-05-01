@@ -16,7 +16,7 @@ function App() {
         <h2 className="is-size-4">Profile webite - coming soon</h2>
         <img id="profile-image" src={profileImage} alt="profile" />
         <span className="is-size-2">Keisuke Sato</span>
-        <span className="is-size-3 container is-max-desktop" style={{ margin: '10px' }}>
+        <span className="is-size-3 container is-size-6-mobile is-max-desktop" style={{ margin: '10px' }}>
           I'm a software engineer who has been interested in interactive projects which bring people, design and
           technology together. I worked on an interactive projection mapping for Zushi Art Festival in 2020 and I have
           been building a platform that connects creators together and takes their creativity into the next level.
