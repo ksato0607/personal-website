@@ -3,6 +3,13 @@ import ReactPlayer from 'react-player';
 import './App.css';
 import profileImage from '../src/assets/my-profile-image.jpg';
 import { FaGithub, FaYoutube, FaLinkedin } from 'react-icons/fa';
+import ReactWordcloud, { MinMaxPair } from 'react-wordcloud';
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/animations/scale.css';
+import { skills } from './skills';
+import { isMobile } from 'react-device-detect';
+const wordCloudSize: MinMaxPair = isMobile ? [300, 200] : [600, 450];
+const wordCloudFontSize: MinMaxPair = isMobile ? [15, 40] : [20, 60];
 
 interface IIconProps {
   url: string;
@@ -34,6 +41,27 @@ function App() {
           height="450px"
           style={{ height: 'auto', maxWidth: '100%' }}
         />
+        <h1 className="is-size-2" style={{ marginTop: '10px' }}>
+          Technical Skills
+        </h1>
+        <div className="columns is-mobile is-centered" style={{ margin: '10px' }}>
+          <div
+            className="has-background-white-bis"
+            style={{ background: 'has-background-white-bis', borderRadius: '5%' }}
+          >
+            <ReactWordcloud
+              options={{
+                fontFamily: 'courier new',
+                fontSizes: wordCloudFontSize,
+                rotations: 0
+              }}
+              size={wordCloudSize}
+              words={skills}
+            />
+          </div>
+        </div>
+        <br />
+        <br />
         <br />
       </header>
     </div>
