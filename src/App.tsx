@@ -62,7 +62,6 @@ function App() {
         </div>
         <br />
         <br />
-        <br />
       </header>
     </div>
   );
