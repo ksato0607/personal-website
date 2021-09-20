@@ -20,7 +20,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2 className="is-size-4">Profile webite - coming soon</h2>
         <img id="profile-image" src={profileImage} alt="profile" />
         <span className="is-size-2">Keisuke Sato</span>
         <span className="is-size-3 container is-size-6-mobile is-max-desktop" style={{ margin: '10px' }}>
