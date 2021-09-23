@@ -54,7 +54,7 @@ const others: ISkill[] = [
  * 2 - Devoping
  * 1 - Novice
  */
-export const skills: ISkill[] = [
+export const mySkills: ISkill[] = [
   ...languages,
   ...frameworks,
   ...infra,

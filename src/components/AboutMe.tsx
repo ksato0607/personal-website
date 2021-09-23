@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from './Icon';
 import { FaGithub, FaYoutube, FaLinkedin } from 'react-icons/fa';
-import profileImage from '../src/assets/my-profile-image.jpg';
+import profileImage from '../../src/assets/my-profile-image.jpg';
 
 function AboutMe() {
   return (
