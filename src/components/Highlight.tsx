@@ -9,9 +9,9 @@ function Highlight() {
         url="https://www.youtube.com/watch?v=CFBeNRFlvdM"
         width="800px"
         height="450px"
-        style={{ height: 'auto', maxWidth: '100%' }}
+        style={{ height: 'auto', maxWidth: '90%' }}
       />
-      <span className="pr-2 pl-2 is-size-6">Interactive video meditation presented in Zushi Art Festival 2020</span>
+      <span className="px-2 is-size-6">Interactive video meditation presented in Zushi Art Festival 2020</span>
     </React.Fragment>
   );
 }

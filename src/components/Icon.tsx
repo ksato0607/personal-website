@@ -5,7 +5,7 @@ interface IIconProps {
 
 function Icon({ url, reactIcon }: IIconProps) {
   return (
-    <a href={url} target="_blank" rel="noreferrer" className="pr-4" style={{ color: '#ec7309' }}>
+    <a href={url} target="_blank" rel="noreferrer" className="px-2" style={{ color: '#ec7309' }}>
       {reactIcon}
     </a>
   );
