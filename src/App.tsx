@@ -1,8 +1,8 @@
 import React from 'react';
-import './App.css';
 import AboutMe from './components/AboutMe';
 import Highlight from './components/Highlight';
 import Skills from './components/Skills';
+import './App.css';
 
 function App() {
   return (

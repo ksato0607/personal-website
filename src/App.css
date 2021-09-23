@@ -36,9 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-#profile-image {
-  max-width: 300px;
-  border-radius: 50%;
-  margin: 50px;
-}
