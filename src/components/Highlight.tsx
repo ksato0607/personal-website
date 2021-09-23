@@ -16,7 +16,7 @@ function Highlight() {
       <span className="px-2 is-size-6">Interactive video meditation presented in Zushi Art Festival 2020</span>
 
       <br />
-      <a className='matchhat'href="https://matchhat.com" target="_blank" rel="noreferrer">
+      <a className="matchhat" href="https://matchhat.com" target="_blank" rel="noreferrer">
         <img src={matchhatImage} alt="matchhat" />
       </a>
       <span className="px-2 is-size-6 matchhat">
