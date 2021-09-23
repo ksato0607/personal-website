@@ -11,6 +11,7 @@ function Highlight() {
         height="450px"
         style={{ height: 'auto', maxWidth: '100%' }}
       />
+      <span className="pr-2 pl-2 is-size-6">Interactive video meditation presented in Zushi Art Festival 2020</span>
     </React.Fragment>
   );
 }
