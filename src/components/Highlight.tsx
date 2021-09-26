@@ -9,6 +9,7 @@ function Highlight() {
       <h1 className="is-size-2">Projects Highlight</h1>
       <ReactPlayer
         url="https://www.youtube.com/watch?v=CFBeNRFlvdM"
+        controls={true}
         width="800px"
         height="450px"
         style={{ height: 'auto', maxWidth: '90%' }}
