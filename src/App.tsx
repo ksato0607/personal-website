@@ -3,6 +3,10 @@ import AboutMe from './components/AboutMe';
 import Highlight from './components/Highlight';
 import Skills from './components/Skills';
 import './App.css';
+import ReactGA from 'react-ga';
+
+const trackingId = 'UA-208623119-1';
+ReactGA.initialize(trackingId);
 
 function App() {
   return (
