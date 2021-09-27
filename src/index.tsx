@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bulma/css/bulma.min.css';
+import ReactGA from 'react-ga';
+
+const trackingId = 'UA-208623119-1';
+ReactGA.initialize(trackingId);
 
 ReactDOM.render(
   <React.StrictMode>
