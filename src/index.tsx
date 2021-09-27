@@ -13,6 +13,7 @@ ReactGA.initialize(trackingId, {
     siteSpeedSampleRate: 100
   }
 });
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <React.StrictMode>
