@@ -7,7 +7,12 @@ import 'bulma/css/bulma.min.css';
 import ReactGA from 'react-ga';
 
 const trackingId = 'UA-208623119-1';
-ReactGA.initialize(trackingId);
+ReactGA.initialize(trackingId, {
+  debug: false,
+  gaOptions: {
+    siteSpeedSampleRate: 100
+  }
+});
 
 ReactDOM.render(
   <React.StrictMode>
