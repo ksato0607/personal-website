@@ -16,12 +16,13 @@ function Highlight() {
       />
       <span className="px-2 is-size-6 highlight-project">
         Interactive projection mapping presented in Zushi Art Festival 2020. Involved as a co-director to generate the
-        concept of the installation, and as an software engineer to develop different effect patterns using Touch Designer & Kinect.
+        concept of the installation, and as an software engineer to develop different effect patterns using Touch
+        Designer & Kinect.
       </span>
 
       <br />
       <a className="highlight-project" href="https://matchhat.com" target="_blank" rel="noreferrer">
-        <img src={matchhatImage} alt="matchhat" />
+        <img className="shadow" src={matchhatImage} alt="matchhat" />
       </a>
       <span className="px-2 is-size-6 highlight-project">
         Global platform where users can find collaborators from different backgrounds and fields to realize their
