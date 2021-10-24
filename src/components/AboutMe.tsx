@@ -1,6 +1,6 @@
 import React from 'react';
 import Icon from './Icon';
-import { FaGithub, FaYoutube, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaYoutube, FaLinkedin, FaInstagramSquare } from 'react-icons/fa';
 import profileImage from '../../src/assets/my-profile-image.jpg';
 import './AboutMe.css';
 
@@ -23,6 +23,11 @@ function AboutMe() {
           color="#dc4332"
         />
         <Icon url="https://www.linkedin.com/in/keisuke-sato/" reactIcon={<FaLinkedin />} color="#3273dc" />
+        <Icon
+          url="https://www.instagram.com/keisuke_sato_engineer/"
+          reactIcon={<FaInstagramSquare />}
+          color="#dc329f"
+        />
       </div>
     </React.Fragment>
   );
