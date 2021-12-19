@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactWordcloud, { MinMaxPair } from 'react-wordcloud';
-import { mySkills } from '../mySkillList';
+import { mySkills, ISkill } from '../mySkillList';
 import { isMobile } from 'react-device-detect';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/animations/scale.css';
@@ -19,6 +19,7 @@ function Skills() {
               fontSizes: wordCloudFontSize,
               rotations: 0
             }}
+            callbacks={{ getWordTooltip: (word: ISkill) => `${word.text} - ${word.description}` }}
             size={wordCloudSize}
             words={mySkills}
           />

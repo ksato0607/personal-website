@@ -1,51 +1,50 @@
-interface ISkill {
+export interface ISkill {
   text: string;
   value: number;
+  description?: string;
 }
 
 const languages: ISkill[] = [
-  { text: 'Javascript', value: 3 },
-  { text: 'TypeScript', value: 2 },
-  { text: 'SQL', value: 2 },
-  { text: 'GraphQL', value: 2 },
-  { text: 'HTML', value: 2 },
-  { text: 'CSS', value: 2 },
-  { text: 'Ruby', value: 1 },
-  { text: 'C++', value: 1 },
-  { text: 'Processing', value: 1 }
+  { text: 'Javascript', value: 3, description: 'Most proficient language' },
+  { text: 'TypeScript', value: 2, description: 'Learning to become proficient' },
+  { text: 'SQL', value: 2, description: 'Be able to query the necessary data from the database' },
+  { text: 'GraphQL', value: 2, description: 'Be able to add endpoints and write simple code' },
+  { text: 'HTML', value: 2, description: 'Be able to write simple code' },
+  { text: 'CSS', value: 2, description: 'Be able to write simple code' },
+  { text: 'Processing', value: 1, description: 'Used in some personal projects' }
 ];
 
 const frameworks: ISkill[] = [
-  { text: 'ReactJs', value: 2 },
-  { text: 'NestJs', value: 1 },
-  { text: 'Serverless', value: 2 }
+  { text: 'ReactJs', value: 2, description: 'Most proficient frontend framework' },
+  { text: 'NestJs', value: 1, description: 'Be able to maintain and write simple code' },
+  { text: 'Serverless', value: 2, description: 'Be able to maintain and deploy aws lambda' }
 ];
 
 const infra: ISkill[] = [
-  { text: 'AWS', value: 2 },
-  { text: 'Heroku', value: 1 }
+  { text: 'AWS', value: 2, description: 'Most proficient infrastructure service' },
+  { text: 'Heroku', value: 1, description: 'Be able to use CLI and deploy' }
 ];
 
 const tests: ISkill[] = [
-  { text: 'Mocha', value: 2 },
-  { text: 'Cypress', value: 2 }
+  { text: 'Mocha', value: 2, description: 'Be able to write tests in general' },
+  { text: 'Cypress', value: 2, description: 'Be able to write tests in general' }
 ];
 
 const monitoring: ISkill[] = [
-  { text: 'Sumologic', value: 2 },
-  { text: 'Sentry', value: 1 }
+  { text: 'Sumologic', value: 2, description: 'Be able to analyze logs, make dashboards and send alerts' },
+  { text: 'Sentry', value: 1, description: 'Be able to implement, monitor the performance and catch errors' }
 ];
 
 const libraries: ISkill[] = [
-  { text: 'Bulma', value: 2 },
-  { text: 'Apollo', value: 1 }
+  { text: 'Bulma', value: 2, description: 'Most familiar css framework' },
+  { text: 'Apollo', value: 1, description: 'Be able to fetch, cache and modify data with GraphQL' }
 ];
 
 const others: ISkill[] = [
-  { text: 'TouchDesigner', value: 2 },
-  { text: 'Unity', value: 1 },
-  { text: 'Arduino', value: 1 },
-  { text: 'Kinect', value: 1 }
+  { text: 'TouchDesigner', value: 2, description: 'Most proficient software for interactive projects' },
+  { text: 'Unity', value: 1, description: 'Learning to build more advanced interactive projects' },
+  { text: 'Arduino', value: 1, description: 'Be able to connect with various sensors' },
+  { text: 'Kinect', value: 1, description: 'Have used in multiple interactive projects' }
 ];
 
 /**
