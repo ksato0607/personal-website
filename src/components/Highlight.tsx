@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import matchhatImage from '../assets/matchhat-top-page.png';
+import { isMobile } from 'react-device-detect';
 import './Highlight.css';
 
 function Highlight() {
@@ -10,8 +11,9 @@ function Highlight() {
       <ReactPlayer
         url="https://youtu.be/ZSBIcO_cLRM"
         controls={true}
+        muted={true}
         width="800px"
-        height="450px"
+        height={isMobile ? '200px' : '450px'}
         style={{ height: 'auto', maxWidth: '90%' }}
       />
       <span className="px-2 is-size-6 highlight-project">
@@ -24,8 +26,9 @@ function Highlight() {
       <ReactPlayer
         url="https://youtu.be/CFBeNRFlvdM"
         controls={true}
+        muted={true}
         width="800px"
-        height="450px"
+        height={isMobile ? '200px' : '450px'}
         style={{ height: 'auto', maxWidth: '90%' }}
       />
       <span className="px-2 is-size-6 highlight-project">
