@@ -4,13 +4,13 @@ interface ISkill {
 }
 
 const languages: ISkill[] = [
-  { text: 'TypeScript', value: 2 },
   { text: 'Javascript', value: 3 },
-  { text: 'Ruby', value: 2 },
+  { text: 'TypeScript', value: 2 },
   { text: 'SQL', value: 2 },
   { text: 'GraphQL', value: 2 },
   { text: 'HTML', value: 2 },
   { text: 'CSS', value: 2 },
+  { text: 'Ruby', value: 1 },
   { text: 'C++', value: 1 },
   { text: 'Processing', value: 1 }
 ];
@@ -43,6 +43,7 @@ const libraries: ISkill[] = [
 
 const others: ISkill[] = [
   { text: 'TouchDesigner', value: 2 },
+  { text: 'Unity', value: 1 },
   { text: 'Arduino', value: 1 },
   { text: 'Kinect', value: 1 }
 ];
