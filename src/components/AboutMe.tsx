@@ -1,6 +1,7 @@
 import React from 'react';
 import Icon from './Icon';
 import { FaGithub, FaYoutube, FaLinkedin, FaInstagramSquare } from 'react-icons/fa';
+import { SiQiita } from 'react-icons/si';
 import profileImage from '../../src/assets/my-profile-image.jpg';
 import './AboutMe.css';
 
@@ -28,6 +29,7 @@ function AboutMe() {
           reactIcon={<FaInstagramSquare />}
           color="#dc329f"
         />
+        <Icon url="https://qiita.com/casek0607" reactIcon={<SiQiita />} color="rgb(59 3 3 / 92%)" />
       </div>
     </React.Fragment>
   );
