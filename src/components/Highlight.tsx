@@ -7,7 +7,7 @@ import './Highlight.css';
 function Highlight() {
   return (
     <React.Fragment>
-      <h1 className="is-size-2">Projects Highlight</h1>
+      <span className="is-size-2">Projects Highlight</span>
       <ReactPlayer
         url="https://youtu.be/ZSBIcO_cLRM"
         controls={true}

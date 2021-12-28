@@ -10,7 +10,7 @@ const wordCloudFontSize: MinMaxPair = isMobile ? [15, 40] : [20, 60];
 function Skills() {
   return (
     <React.Fragment>
-      <h1 className="is-size-2 m-4">Technical Skills</h1>
+      <span className="is-size-2 m-4">Technical Skills</span>
       <div className="columns is-mobile is-centered">
         <div className="has-background-white-bis" style={{ borderRadius: '5%' }}>
           <ReactWordcloud
