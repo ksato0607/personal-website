@@ -11,10 +11,11 @@ function AboutMe() {
       <img id="profile-image" src={profileImage} alt="profile" />
       <span className="is-size-2">Keisuke Sato</span>
       <span className="is-size-5 container is-size-6-mobile is-max-desktop mx-4">
-        Software engineer specializing in data aggregation in fintech and real-time interactive engineering projects
-        which combine people, design and technology. Has worked on a diverse range of projects from creating an
-        interactive projection mapping as part of Zushi Art Festival, and being a founding member of a startup called
-        MatchHat which is a global platform that helps creators find collaborators for their passion projects.
+        Software engineer specializing in developing highly scalable ETL pipelines for aggregating various financial
+        data from financial institutions in Japan and real-time interactive engineering projects which combine people,
+        design and technology. Has worked on a diverse range of personal projects from creating an interactive media art
+        as part of Zushi Art Festival, and being a founding member of a startup called MatchHat which is a global
+        platform that helps creators find collaborators for their passion projects.
       </span>
       <div id="icons" className="is-size-1">
         <Icon url="https://github.com/ksato0607" reactIcon={<FaGithub />} color="#089037" />
