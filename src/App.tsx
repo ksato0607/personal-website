@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AboutMe from './components/AboutMe';
 import Highlight from './components/Highlight';
 import Skills from './components/Skills';
@@ -17,8 +17,10 @@ function App() {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   });
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
-    <div className="App">
+    <div className="App" style={isLoaded ? {} : { display: 'none' }} onLoad={() => setIsLoaded(true)}>
       <header className="App-header">
         <AboutMe />
         <Highlight />
